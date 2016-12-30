@@ -8,7 +8,21 @@ public class MainController {
 
 	@RequestMapping("/")
 	public String main() {
-		System.out.println("mainController:index");
 		return "index";
+	}
+	
+	@RequestMapping("/about")
+	public String about() {
+		return "about";
+	}	
+	
+	@RequestMapping("/profile")
+	public String profile() {
+		return "profile";
+	}
+	
+	@RequestMapping("/home") 
+	public String home() {
+		return "home";
 	}
 }
